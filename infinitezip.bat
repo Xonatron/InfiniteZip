@@ -5,7 +5,7 @@ rem Define the path to WinRAR executable (adjust this path if needed)
 set winrarPath="C:\Program Files\WinRAR\WinRAR.exe"
 
 rem Create an initial ZIP file containing the TXT file
-%winrarPath% a -ep1 -o -y -inul -IBCK infinite.zip infinitezip.bat
+%winrarPath% a -ep1 -o -y -inul -IBCK -m5 infinite.zip infinitezip.bat
 
 rem Initialize the count (start at 1 matches how many .zips there are in the .zip)
 set count=1
@@ -16,7 +16,7 @@ mkdir "output"
 :loop
 
 rem Create a new ZIP file containing the previous ZIP file
-%winrarPath% a -ep1 -o -y -inul -IBCK temp.zip infinite.zip
+%winrarPath% a -ep1 -o -y -inul -IBCK -m5 temp.zip infinite.zip
 
 rem Delete old ZIP file
 del infinite.zip
@@ -31,7 +31,7 @@ rem Copy the current ZIP file into the folder
 copy infinite.zip "output\!count!" > nul
 
 rem Display a message indicating each iteration
-echo ZIP file updated and copied to folder !count!.
+echo infinite.zip file updated and copied to folder !count!.
 
 rem Increment the count
 set /a count+=1
