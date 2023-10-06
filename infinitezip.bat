@@ -11,7 +11,7 @@ rem Initialize the count (start at 1 matches how many .zips there are in the .zi
 set count=1
 
 rem Create a parent "count" folder
-mkdir "count"
+mkdir "output"
 
 :loop
 
@@ -25,10 +25,10 @@ rem Rename new ZIP file from temporary name to proper name
 rename temp.zip infinite.zip
 
 rem Create a folder with the current count
-mkdir "count\!count!"
+mkdir "output\!count!"
 
 rem Copy the current ZIP file into the folder
-copy infinite.zip "count\!count!" > nul
+copy infinite.zip "output\!count!" > nul
 
 rem Display a message indicating each iteration
 echo ZIP file updated and copied to folder !count!.
