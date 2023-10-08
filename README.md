@@ -1,7 +1,8 @@
 # InfiniteZip
- A zip file of a zip file of a zip file of a zip file of a zip file of a zip file...
+Creates a zip file of a zip file of a zip file of a zip file of a zip file of a zip file... forever.
 
 ## Usage:
+To create infinite.zip -- an "infinite" zip file:
 - run infinitezip.bat
 - in runs forever...
 - cancel manually, whenever you wish
