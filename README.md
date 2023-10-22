@@ -1,8 +1,11 @@
 # InfiniteZip
-Creates a zip file of a zip file of a zip file of a zip file of a zip file of a zip file... forever.
+Creates a .ZIP file of a .ZIP file of a .ZIP file of a .ZIP file of a .ZIP file of a .ZIP file... forever.
+
+<img width="466" alt="image" src="https://github.com/Xonatron/InfiniteZip/assets/7736471/7818ba5b-6add-448c-816d-a7728cb87332">\
+There are 50,000 .ZIP files here!
 
 ## Usage:
-To create infinite.zip -- an "infinite" zip file:
+To create infinite.zip -- an "infinite" .ZIP file:
 1. Run infinitezip.bat.
 1. This batch file runs forever...
 1. Cancel manually, whenever you wish.
